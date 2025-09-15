@@ -110,8 +110,6 @@ end)
 -- Esperar a que se ingrese la contraseña correcta
 repeat task.wait() until accessGranted
 
-print("Contraseña correcta, ejecutando script...")
-
 loadstring(game:HttpGet("https://raw.githubusercontent.com/memejames/elerium-v2-ui-library//main/Library", true))()
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local Players = game:GetService("Players")
